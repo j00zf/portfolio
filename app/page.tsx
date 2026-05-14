@@ -1,93 +1,150 @@
-"use client";
-import Header from './components/Header';
+import { Header } from '@/components/header';
+import { Footer } from '@/components/footer';
 import Link from 'next/link';
-import { ArrowRight, Medal, Users, Target } from 'phosphor-react';
+import { ArrowRight, Shield, Users, Lightbulb, Award, Quote } from 'lucide-react';
+import { JSX } from 'react/jsx-dev-runtime';
+import InitiativesMarquee from '@/components/InitiativesMarquee';
+import  AboutSection  from '@/components/AboutSection';
+
 
 export default function Home() {
   return (
-    <>
+    <div className="min-h-screen bg-background">
       <Header />
 
-      {/* HERO SECTION */}
-      <section className="min-h-screen bg-gradient-to-br from-blue-950 via-indigo-900 to-blue-900 text-white flex items-center relative overflow-hidden">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 bg-[radial-gradient(#ffffff15_1px,transparent_1px)] [background-size:40px_40px]"></div>
-
-        <div className="max-w-7xl mx-auto px-6 pt-20 pb-16 grid md:grid-cols-2 gap-12 items-center relative z-10">
-          <div className="space-y-10">
-            <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md px-5 py-2.5 rounded-3xl text-sm font-medium">
-              <div className="w-2.5 h-2.5 bg-emerald-400 rounded-full animate-pulse"></div>
-              1999 Batch IPS Officer
+      {/* Redesigned Hero Section */}
+      <section className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
+        <div className="grid lg:grid-cols-12 gap-12 items-center">
+          
+          {/* Left Column: Text Content */}
+          <div className="lg:col-span-7 space-y-8">
+            <div>
+              <div className="inline-block mb-4 px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-semibold">
+                Visionary Public Service
+              </div>
+              <h1 className="text-5xl md:text-7xl font-bold text-primary mb-6 leading-tight">
+                <span className="text-accent">P. Vijayan</span> IPS
+              </h1>
+              <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
+                Additional Director General of Police (Intelligence), Kerala. A system reformer and social innovator dedicating 26+ years to redefining modern policing through compassion and measurable transformation.
+              </p>
             </div>
 
-            <h1 className="text-6xl md:text-7xl font-bold leading-tight tracking-tighter">
-              P. Vijayan<br />
-              <span className="text-blue-300">IPS</span>
-            </h1>
-
-            <p className="text-2xl md:text-3xl text-blue-100 font-light">
-              Additional Director General of Police (Intelligence), Kerala
-            </p>
-
-            <p className="text-lg max-w-lg text-blue-200">
-              Visionary Police Officer | System Reformer | Social Innovator<br />
-              Turning Challenges into Opportunities for Nation Building
-            </p>
+            {/* Integrated Philosophy Quote */}
+            <div className="relative p-6 bg-muted/50 border-l-4 border-accent rounded-r-xl italic shadow-sm">
+              <Quote className="absolute -top-3 -left-3 w-8 h-8 text-accent/20 fill-accent/20" />
+              <p className="text-lg text-primary/90 leading-relaxed">
+                "I believe there are two sets of people in the world—'problem people' and 'solution people'. I represent Positivity and Possibilities (Pos-Poss)."
+              </p>
+              <cite className="block mt-2 text-sm font-semibold not-italic text-accent">— Leadership Philosophy</cite>
+            </div>
 
             <div className="flex flex-wrap gap-4">
-              <Link 
+              <Link
                 href="/about"
-                className="bg-white text-blue-950 hover:bg-blue-50 px-8 py-4 rounded-2xl font-semibold flex items-center gap-3 text-lg group transition"
+                className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold hover:shadow-xl transition-all hover:-translate-y-1"
               >
-                Know My Journey
-                <ArrowRight size={24} className="group-hover:translate-x-1 transition" />
+                Explore Profile
+                <ArrowRight className="w-5 h-5" />
               </Link>
-
-              <Link 
+              <Link
                 href="/initiatives"
-                className="border border-white/60 hover:bg-white/10 px-8 py-4 rounded-2xl font-semibold flex items-center gap-3 text-lg transition"
+                className="inline-flex items-center gap-2 border-2 border-primary text-primary px-8 py-4 rounded-lg font-semibold hover:bg-primary hover:text-white transition-all"
               >
-                Explore Initiatives
+                View Initiatives
               </Link>
             </div>
+          </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-8 pt-8">
-              <div>
-                <div className="text-4xl font-bold">26+</div>
-                <div className="text-blue-300 text-sm">Years of Service</div>
+          {/* Right Column: Profile Image & Stats Cards */}
+          <div className="lg:col-span-5 relative">
+            <div className="relative rounded-2xl overflow-hidden aspect-[4/5] shadow-2xl border-8 border-white">
+              {/* Replace with actual image source */}
+              <div className="absolute inset-0 bg-muted flex items-center justify-center">
+                <span className="text-muted-foreground">Profile Image (P. Vijayan IPS)</span>
               </div>
-              <div>
-                <div className="text-4xl font-bold">1M+</div>
-                <div className="text-blue-300 text-sm">Youth Impacted</div>
-              </div>
-              <div>
-                <div className="text-4xl font-bold">150+</div>
-                <div className="text-blue-300 text-sm">Child Friendly Stations</div>
+              {/* Overlay Gradient */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+            </div>
+
+            {/* Floating Achievement Card */}
+            <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl border border-border hidden md:block">
+              <div className="flex items-center gap-4">
+                <div className="bg-accent/10 p-3 rounded-full">
+                  <Award className="w-6 h-6 text-accent" />
+                </div>
+                <div>
+                  <div className="text-2xl font-bold text-primary">26+ Years</div>
+                  <p className="text-xs text-muted-foreground uppercase tracking-wider">Service Excellence</p>
+                </div>
               </div>
             </div>
           </div>
-
-          {/* Right Side Image */}
-          <div className="flex justify-center md:justify-end">
-            <div className="relative">
-              <img 
-                src="https://picsum.photos/id/64/600/720" 
-                alt="P. Vijayan IPS"
-                className="w-80 md:w-[420px] rounded-3xl shadow-2xl border-8 border-white/20 object-cover"
-              />
-              <div className="absolute -bottom-6 -left-6 bg-white text-blue-950 p-6 rounded-3xl shadow-xl max-w-[260px]">
-                <p className="italic text-base">"I represent Positivity and Possibilities (Pos-Poss)"</p>
-                <p className="text-xs mt-4 text-right font-medium">- P. Vijayan IPS</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="absolute bottom-10 left-1/2 animate-bounce">
-          <ArrowRight size={32} className="rotate-90 text-white/60" />
         </div>
       </section>
-    </>
+
+      <AboutSection />
+      <InitiativesMarquee />
+
+      {/* Key Statistics Bar */}
+      <section className="bg-primary py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {[
+              { label: "Youth Impacted", value: "1M+" },
+              { label: "Active Schools", value: "13K+" },
+              { label: "Presidential Medals", value: "2" },
+              { label: "Global Programs", value: "15+" }
+            ].map((stat, i) => (
+              <div key={i} className="text-center border-r border-primary-foreground/10 last:border-0">
+                <div className="text-3xl md:text-4xl font-bold text-accent mb-1">{stat.value}</div>
+                <p className="text-primary-foreground/70 text-sm font-medium">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Capabilities Grid */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <FeatureCard 
+            icon={<Shield />} 
+            title="Law Enforcement" 
+            desc="Strategic leadership in intelligence and security operations." 
+          />
+          <FeatureCard 
+            icon={<Users />} 
+            title="Community" 
+            desc="Grassroots engagement and citizen-centric policing models." 
+          />
+          <FeatureCard 
+            icon={<Lightbulb />} 
+            title="Innovation" 
+            desc="Creating replicable social models for systemic reform." 
+          />
+          <FeatureCard 
+            icon={<Award />} 
+            title="Recognition" 
+            desc="Honored with national and international accolades." 
+          />
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+  );
+}
+
+// Helper component for the feature grid
+function FeatureCard({ icon, title, desc }: { icon: React.ReactNode, title: string, desc: string }) {
+  return (
+    <div className="bg-white p-8 rounded-2xl border border-border shadow-sm hover:shadow-md transition-shadow group">
+      <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-accent group-hover:text-white transition-colors text-accent">
+        {icon}
+      </div>
+      <h3 className="text-xl font-bold text-primary mb-2">{title}</h3>
+      <p className="text-muted-foreground text-sm leading-relaxed">{desc}</p>
+    </div>
   );
 }
