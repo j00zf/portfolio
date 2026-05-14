@@ -271,7 +271,7 @@ export default function Recognition() {
         <div className="mt-20 bg-muted rounded-3xl p-12 md:p-16 border border-border">
           <h2 className="text-3xl font-bold text-primary mb-6 text-center">Vision Alignment: Amrit Kaal (2047)</h2>
           <p className="text-lg text-muted-foreground text-center mb-6 leading-relaxed">
-            Mr. Vijayan\'s pioneering models in youth engagement, narcotics control, and community-led enforcement offer scalable blueprints for national governance. His work seamlessly aligns with India\'s aspirations of becoming a progressive, safe, and empowered nation by 2047.
+            Mr. Vijayan's pioneering models in youth engagement, narcotics control, and community-led enforcement offer scalable blueprints for national governance. His work seamlessly aligns with India's aspirations of becoming a progressive, safe, and empowered nation by 2047.
           </p>
           <div className="grid md:grid-cols-3 gap-6 mt-8">
             <div className="bg-white rounded-lg p-6 text-center">

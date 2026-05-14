@@ -11,51 +11,51 @@ export default function InitiativesMarquee(): JSX.Element {
   const initiatives: Initiative[] = [
     {
       name: "SPC",
-      logo: "/initiatives/spc.jpg",
+      logo: "https://picsum.photos/300/300?random=1",
     },
     {
       name: "Project HOPE",
-      logo: "/initiatives/hope.jpg",
+      logo: "https://picsum.photos/300/300?random=2",
     },
     {
       name: "CEEP",
-      logo: "/initiatives/ceep.jpg",
+      logo: "https://picsum.photos/300/300?random=3",
     },
     {
       name: "BEEP",
-      logo: "/initiatives/beep.jpg",
+      logo: "https://picsum.photos/300/300?random=4",
     },
     {
       name: "CAP",
-      logo: "/initiatives/cap.jpg",
+      logo: "https://picsum.photos/300/300?random=5 ",
     },
     {
       name: "ORC",
-      logo: "/initiatives/orc.jpg",
+      logo: "https://picsum.photos/300/300?random=6",
     },
     {
       name: "SPG",
-      logo: "/initiatives/spg.jpg",
+      logo: "https://picsum.photos/300/300?random=7",
     },
     {
       name: "D-DAD",
-      logo: "/initiatives/ddad.jpg",
+      logo: "https://picsum.photos/300/300?random=8",
     },
     {
       name: "Feed-A-Stomach",
-      logo: "/initiatives/feed.jpg",
+      logo: "https://picsum.photos/300/300?random=9",
     },
     {
       name: "DCRC",
-      logo: "/initiatives/dcrc.jpg",
+      logo: "https://picsum.photos/300/300?random=10",
     },
     {
       name: "Punyam Poonkavanam",
-      logo: "/initiatives/punyam.jpg",
+      logo: "https://picsum.photos/300/300?random=11",
     },
     {
       name: "Project Candlelight",
-      logo: "/initiatives/candlelight.jpg",
+      logo: "https://picsum.photos/300/300?random=12",
     },
   ];
 

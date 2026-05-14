@@ -19,28 +19,28 @@ export default function Initiatives() {
       initiatives: [
         {
           name: 'Student Police Cadets Programme (SPC)',
-          logo: '/initiatives/spc.jpg',
+          logo: 'https://picsum.photos/300/300?random=1',
           website: 'https://studentpolicecadet.org',
           description:
             'Revolutionary initiative active in 13,000+ schools across India mentoring 1M+ youth. Instills civic responsibility, discipline, empathy, and leadership.',
         },
         {
           name: 'Project HOPE',
-          logo: '/initiatives/hope.jpg',
+          logo: 'https://picsum.photos/300/300?random=2',
           website: '#',
           description:
             'Targeted intervention reintegrating students who failed Class X into educational and social mainstream through mentoring and skill development.',
         },
         {
           name: 'Capability Exploration & Enhancement Programme (CEEP)',
-          logo: '/initiatives/ceep.jpg',
+          logo: 'https://picsum.photos/300/300?random=3',
           website: '#',
           description:
             "Ignites children's potential and shapes them as natural leaders through non-cognitive skill development.",
         },
         {
           name: 'Behavioral & Emotional Empowerment Programme (BEEP)',
-          logo: '/initiatives/beep.jpg',
+          logo: 'https://picsum.photos/300/300?random=4',
           website: '#',
           description:
             'First-of-its-kind psycho-social framework for adolescent well-being addressing aggression, addiction, and emotional resilience.',
@@ -53,28 +53,28 @@ export default function Initiatives() {
       initiatives: [
         {
           name: 'Children & Police (CAP)',
-          logo: '/initiatives/cap.jpg',
+          logo: 'https://picsum.photos/300/300?random=5',
           website: '#',
           description:
             'Institutional model reshaping police engagement with children and transforming police stations into child-sensitive spaces.',
         },
         {
           name: 'Our Responsibility to Children (ORC)',
-          logo: '/initiatives/orc.jpg',
+          logo: 'https://picsum.photos/300/300?random=6',
           website: '#',
           description:
             'School-based child protection initiative involving parents, teachers, local governance, and civil society.',
         },
         {
           name: 'School Protection Groups (SPG)',
-          logo: '/initiatives/spg.jpg',
+          logo: 'https://picsum.photos/300/300?random=7',
           website: '#',
           description:
             'Community-led initiative ensuring child safety and preventing juvenile delinquency.',
         },
         {
           name: 'Digital De-Addiction (D-DAD) Centres',
-          logo: '/initiatives/ddad.jpg',
+          logo: 'https://picsum.photos/300/300?random=8',
           website: '#',
           description:
             'Psychological support initiative for children affected by internet and gaming addiction.',
@@ -87,28 +87,28 @@ export default function Initiatives() {
       initiatives: [
         {
           name: 'Feed-A-Stomach Campaign',
-          logo: '/initiatives/feed.jpg',
+          logo: 'https://picsum.photos/300/300?random=9',
           website: '#',
           description:
             'COVID-19 relief initiative mobilizing kitchens and delivering meals to vulnerable communities.',
         },
         {
           name: 'Domestic Conflict Resolution Centres (DCRC)',
-          logo: '/initiatives/dcrc.jpg',
+          logo: 'https://picsum.photos/300/300?random=10',
           website: '#',
           description:
             'Conflict resolution initiative mitigating violence against women, children, and persons with disabilities.',
         },
         {
           name: "'Nanma' Homes",
-          logo: '/initiatives/nanma.jpg',
+          logo: 'https://picsum.photos/300/300?random=11',
           website: '#',
           description:
             'Community-led initiative constructing homes for homeless and flood-affected populations.',
         },
         {
           name: "'Chiri' Project",
-          logo: '/initiatives/chiri.jpg',
+          logo: 'https://picsum.photos/300/300?random=12',
           website: '#',
           description:
             'Mental health initiative supporting children during COVID-19 with psychologists and peer mentors.',
@@ -121,14 +121,14 @@ export default function Initiatives() {
       initiatives: [
         {
           name: "'Punyam Poonkavanam'",
-          logo: '/initiatives/punyam.jpg',
+          logo: 'https://picsum.photos/300/300?random=13',
           website: '#',
           description:
             'Benchmark environmental initiative redefining responsible pilgrimage through behavioral reform and waste management.',
         },
         {
           name: 'Project Candlelight',
-          logo: '/initiatives/candlelight.jpg',
+          logo: 'https://picsum.photos/300/300?random=14',
           website: '#',
           description:
             'Youth redirection programme targeting at-risk adolescents from urban slums.',
@@ -141,14 +141,14 @@ export default function Initiatives() {
       initiatives: [
         {
           name: 'Kerala Police Academy Modernization',
-          logo: '/initiatives/kpa.jpg',
+          logo: 'https://picsum.photos/300/300?random=15',
           website: '#',
           description:
             'Modernized police training through AI integration and behavioral reform.',
         },
         {
           name: 'Social Policing Division',
-          logo: '/initiatives/social-policing.jpg',
+          logo: 'https://picsum.photos/300/300?random=16',
           website: '#',
           description:
             'First-ever dedicated division integrating social welfare with law enforcement.',
@@ -156,7 +156,7 @@ export default function Initiatives() {
         {
           name:
             'Compassionate Communication & Intervention by Police (CCIP)',
-          logo: '/initiatives/ccip.jpg',
+          logo: 'https://picsum.photos/300/300?random=17',
           website: '#',
           description:
             'Framework for empathetic police-community engagement and healing.',

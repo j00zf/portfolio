@@ -15,7 +15,7 @@ export default function AboutSection(): JSX.Element {
             <div className="relative overflow-hidden rounded-[2rem] border border-border shadow-2xl">
               <div className="relative h-[650px] w-full">
                 <Image
-                  src="/vijayan/about.jpg"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/P_Vijayan_IPS.jpg/500px-P_Vijayan_IPS.jpg"
                   alt="P. Vijayan IPS"
                   fill
                   className="object-cover"
@@ -46,7 +46,7 @@ export default function AboutSection(): JSX.Element {
               ABOUT P. VIJAYAN IPS
             </p>
 
-            <h2 className="text-5xl md:text-6xl font-black text-primary leading-tight mb-8">
+            <h2 className="text-5xl md:text-4xl font-black text-primary leading-tight mb-8">
               Visionary Police Officer & Social Reformer
             </h2>
 

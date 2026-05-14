@@ -5,7 +5,8 @@ import { ArrowRight, Shield, Users, Lightbulb, Award, Quote } from 'lucide-react
 import { JSX } from 'react/jsx-dev-runtime';
 import InitiativesMarquee from '@/components/InitiativesMarquee';
 import  AboutSection  from '@/components/AboutSection';
-
+import LeadershipInnovationsMarquee from '@/components/Achievements';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -61,21 +62,24 @@ export default function Home() {
             <div className="relative rounded-2xl overflow-hidden aspect-[4/5] shadow-2xl border-8 border-white">
               {/* Replace with actual image source */}
               <div className="absolute inset-0 bg-muted flex items-center justify-center">
-                <span className="text-muted-foreground">Profile Image (P. Vijayan IPS)</span>
+                <Image
+                  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D990949005724317&f=1&nofb=1&ipt=ef7dc3778b9a2784951273a819a2b570f6bc09f6ad4d76817e827cbaeaf6c330"
+                  alt="P. Vijayan IPS"
+                  fill
+                  className="object-cover"
+                />
               </div>
               {/* Overlay Gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
             </div>
 
             {/* Floating Achievement Card */}
-            <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl border border-border hidden md:block">
+            <div className="absolute -bottom-2 -left-2 bg-white/90 p-2 rounded-xl shadow-xl border border-border hidden md:block">
               <div className="flex items-center gap-4">
-                <div className="bg-accent/10 p-3 rounded-full">
-                  <Award className="w-6 h-6 text-accent" />
-                </div>
+               
                 <div>
-                  <div className="text-2xl font-bold text-primary">26+ Years</div>
-                  <p className="text-xs text-muted-foreground uppercase tracking-wider">Service Excellence</p>
+                  <div className="text-xl font-bold text-primary">ADGP, KP</div>
+                  <p className="text-xs text-muted-foreground uppercase tracking-wider">(Intelligence)</p>
                 </div>
               </div>
             </div>
@@ -85,6 +89,31 @@ export default function Home() {
 
       <AboutSection />
       <InitiativesMarquee />
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        {/* National Leadership Context */}
+        <div className="mt-20 bg-muted rounded-3xl p-12 md:p-16 border border-border">
+          <h2 className="text-3xl font-bold text-primary mb-6 text-center">Vision Alignment: Amrit Kaal (2047)</h2>
+          <p className="text-lg text-muted-foreground text-center mb-6 leading-relaxed">
+            Mr. Vijayan's pioneering models in youth engagement, narcotics control, and community-led enforcement offer scalable blueprints for national governance. His work seamlessly aligns with India's aspirations of becoming a progressive, safe, and empowered nation by 2047.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6 mt-8">
+            <div className="bg-white rounded-lg p-6 text-center">
+              <p className="font-bold text-primary mb-2">Evidence-Based</p>
+              <p className="text-sm text-muted-foreground">Measurable outcomes validated by independent institutions</p>
+            </div>
+            <div className="bg-white rounded-lg p-6 text-center">
+              <p className="font-bold text-primary mb-2">Scalable Models</p>
+              <p className="text-sm text-muted-foreground">Replicable across states and national contexts</p>
+            </div>
+            <div className="bg-white rounded-lg p-6 text-center">
+              <p className="font-bold text-primary mb-2">Citizen-Centric</p>
+              <p className="text-sm text-muted-foreground">Community ownership and inclusive governance</p>
+            </div>
+          </div>
+        </div>
+        </section>
+
+      <LeadershipInnovationsMarquee />
 
       {/* Key Statistics Bar */}
       <section className="bg-primary py-12">
@@ -104,6 +133,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
 
       {/* Capabilities Grid */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
